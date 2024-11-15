@@ -31,7 +31,7 @@
         padding: 10px 24px;
         margin: 5px 0;
         cursor: pointer;
-        width: 70%;
+        width: 80%;
         text-align: center;
         display: block;
       }
@@ -45,20 +45,41 @@
         padding-top: 80px;
       }
       .body > * {
-        flex: 1 1 80px;
+        flex: 1 1 50px;
       }
       .main {
-        padding-right: 200px;
+        padding-right: 20px;
+      }
+      .leader{
+        padding-right: 20px;
       }
       footer {
         margin-top: 20px;
         text-align: center;
       }
+      .footer {
+        position: relative;
+        height: 150px;
+        background: #63ff8d; /* Main footer background */
+        overflow: hidden;
+      }
+      
+      .footer  .footer-text{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="1" d="M0,256L60,240C120,224,240,192,360,186.7C480,181,600,203,720,192C840,181,960,139,1080,112C1200,85,1320,75,1380,69.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+  
     </style>
   </head>
   <body>
     <header class="header">
-      <h2 class="header-text">Header</h2>
+      <h2 class="header-text">Teams Trees Project</h2>
     </header>
     <div class="body">
       <nav class="navbar">
@@ -68,9 +89,15 @@
         </div>
         <div class="links">
           <button class="home-link"><a href="/main.html">Home</a></button>
-          <button class="services-link"><a href="https://www.teamtree.services/">Services</a></button>
-          <button class="blog-link"><a href="https://teamtrees.org/" target="_blank">Blog</a></button>
-          <button class="contact-link"><a href="./Contact.html">Contact Us</a></button>
+          <button class="services-link">
+            <a href="https://www.teamtree.services/">Services</a>
+          </button>
+          <button class="blog-link">
+            <a href="https://teamtrees.org/" target="_blank">Blog</a>
+          </button>
+          <button class="contact-link">
+            <a href="./Contact.html">Contact Us</a>
+          </button>
         </div>
       </nav>
       <main class="main">
@@ -82,25 +109,37 @@
           partnered up with a non-profit organization called Arbor Day to lead
           in this eco-friendly initiative. As we all know, global warming has
           become one of the highest threats to the earth and its inhabitants.
-          Therefore, we aim to plant 20 million trees to boost oxygen levels
-          and reduce the carbon footprint human innovation is causing. We can
-          all contribute to this goal by planting one tree at a time. Special
-          thanks to Arbor Day for their tremendous support in achieving this
+          Therefore, we aim to plant 20 million trees to boost oxygen levels and
+          reduce the carbon footprint human innovation is causing. We can all
+          contribute to this goal by planting one tree at a time. Special thanks
+          to Arbor Day for their tremendous support in achieving this
           groundbreaking goal. Together, we can make a change. Which side will
           you be on?
         </p>
       </main>
       <section class="leader">
         <h2>Leader</h2>
-        <p>Team Trees is a global movement aiming to fight climate change by planting 20 million trees, partnering with the Arbor Day Foundation to make a lasting impact. Together, we can create a greener future—one tree at a time.</p>
+        <p>
+          Team Trees is a global movement aiming to fight climate change by
+          planting 20 million trees, partnering with the Arbor Day Foundation to
+          make a lasting impact. Together, we can create a greener future—one
+          tree at a time.
+        </p>
       </section>
       <section class="mission">
         <h2>Mission Statement</h2>
-        <p>Our mission is to plant trees and improve the environment for future generations...</p>
+        <p>
+          Our mission is to plant trees and improve the environment for future
+          generations...
+        </p>
       </section>
     </div>
     <footer>
-      <p>Footer content here...</p>
+      <div class="footer">
+        <h2 class="footer-text">
+          Together We Grow: Supporting a Greener Future, One Tree at a Time 🌳
+        </h2>
+      </div>
     </footer>
   </body>
 </html>
